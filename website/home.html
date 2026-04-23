@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YAY - Home</title>
+
+    <!-- TIPOGRAFÍAS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- LOGO -->
+        <div class="nav-left">
+          <a href="Home.html">
+            <img src="assets/logo/logo.png" alt="logo" class="logo-img" />
+          </a>
+        </div>
+
+        <!-- LINKS (desktop) -->
+        <div class="nav-center">
+          <a href="about.html">ABOUT</a>
+          <a href="talent.html">TALENT</a>
+          <a href="news.html">NEWS</a>
+          <a href="shop.html">SHOP</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="nav-right">
+          <input type="text" placeholder="Search..." class="search-bar" />
+
+          <!-- BOTÓN HAMBURGUESA -->
+          <button class="menu-toggle" id="menu-toggle">☰</button>
+
+          <!-- CARRITO -->
+          <a href="cart.html">
+            <img src="assets/icons/cart.png" alt="cart" class="cart-icon" />
+          </a>
+        </div>
+      </div>
+
+      <!-- MENÚ MÓVIL -->
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="about.html">ABOUT</a>
+        <a href="talent.html">TALENT</a>
+        <a href="news.html">NEWS</a>
+        <a href="shop.html">SHOP</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="container hero">
+      <h1 class="title">Aphrodi</h1>
+      <p class="subtitle">Angel Idol Virtual Experience</p>
+      <a href="shop.html" class="btn-primary">Shop Merch</a>
+    </section>
+
+    <!-- DESTACADOS -->
+    <section class="container">
+      <h2 class="section-title">New Merch</h2>
+
+      <div class="grid grid-3">
+        <div class="product-card">
+          <p>Hoodie</p>
+          <p>30€</p>
+          <button class="btn-primary">Comprar</button>
+        </div>
+
+        <div class="product-card">
+          <p>Poster</p>
+          <p>15€</p>
+          <button class="btn-primary">Comprar</button>
+        </div>
+
+        <div class="product-card">
+          <p>Voice Pack</p>
+          <p>10€</p>
+          <button class="btn-primary">Comprar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/loader.js"></script>
+  </body>
+</html>

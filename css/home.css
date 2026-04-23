@@ -1,0 +1,33 @@
+.product-card {
+  background: var(--color-secondary);
+  padding: 1rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.title {
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.section-title {
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 1rem;
+}
+
+.product-card {
+  background: var(--lilac-soft);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+}

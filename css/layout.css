@@ -1,0 +1,213 @@
+/* =========================
+   GRID
+========================= */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn-primary {
+  background: var(--color-accent);
+  padding: 0.7rem 1.2rem;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid #d3dfeb;
+}
+
+/* CONTENEDOR CENTRADO */
+.nav-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+
+  padding: 0.8rem 1.5rem;
+}
+
+/* IZQUIERDA */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 45px;
+}
+
+/* CENTRO (ahora alineado a la izquierda) */
+.nav-center {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+.nav-center a {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+/* Hover underline elegante */
+.nav-center a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #9d90bc;
+  transition: 0.3s;
+}
+
+.nav-center a:hover::after {
+  width: 100%;
+}
+
+.nav-center a:hover {
+  color: #9d90bc;
+}
+
+/* DERECHA */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  justify-self: end;
+}
+
+/* SEARCH */
+.search-bar {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+  outline: none;
+  transition: var(--transition);
+}
+
+.search-bar:focus {
+  border-color: #9d90bc;
+}
+
+/* CART ICON */
+.cart-icon {
+  width: 22px;
+  cursor: pointer;
+}
+
+/* =========================
+   MOBILE
+========================= */
+/* MÓVIL PEQUEÑO */
+@media (max-width: 424px) {
+  .nav-center {
+    display: none;
+  }
+
+  .search-bar {
+    width: 70px;
+    font-size: 0.8rem;
+  }
+
+  .logo-img {
+    width: 38px;
+  }
+
+  .nav-container {
+    padding: 0.7rem 1rem;
+  }
+}
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* MENÚ MÓVIL */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: white;
+  padding: 1rem;
+  border-bottom: 2px solid #d3dfeb;
+}
+
+.mobile-menu a {
+  padding: 0.8rem 0;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  color: #333;
+}
+
+/* MOBILE */
+@media (max-width: 424px) {
+  .nav-center {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .search-bar {
+    width: 70px;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+}
