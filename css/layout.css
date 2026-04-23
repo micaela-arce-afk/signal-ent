@@ -193,20 +193,24 @@
   color: #333;
 }
 
-/* MOBILE */
-@media (max-width: 424px) {
+/* TABLET + MÓVIL */
+@media (max-width: 768px) {
+  /* ocultar links */
   .nav-center {
     display: none;
   }
 
+  /* mostrar hamburguesa */
   .menu-toggle {
     display: block;
   }
 
+  /* ajustar search */
   .search-bar {
-    width: 70px;
+    width: 90px;
   }
 
+  /* menú desplegable */
   .mobile-menu.active {
     display: flex;
   }
